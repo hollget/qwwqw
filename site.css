@@ -1,0 +1,152 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(img/bg2.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+    
+    }
+#one{
+    text-align: center;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+    width: 90%;
+    height: 70px;
+    border-radius: 4px;
+    
+   background-color: rgba(255, 255, 255, 0.7); 
+}
+#one h4{
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+#one a {
+
+    text-align: center;
+    color: #40382D;
+    box-shadow: inset 0 -2px 0 #40382D;
+ }
+ #one a:hover {
+    box-shadow: inset 0 -60px 0 #40382D, 2px 4px 3px rgba(0, 0, 0, 0.3);
+    color: #DECDA5;
+ }
+#two{
+    width: 900px ;
+    height: 13  00px;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.7);   
+    border-radius: 4px;
+    
+    }
+    
+#three
+        {
+             width: 95% ;
+            height: 200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px; 
+        }
+            #three h2{
+                text-align: center;
+            }
+            #three h3{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+#four{
+    text-align: center;
+    width: 95% ;
+    height: 200px;
+    margin: 0 auto;
+
+}
+    #four h2{
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+    }
+    #four h4{
+        color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: hsla(0, 0%, 100%, 0.7);
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: rgba(255, 0, 0);
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + #five {
+    border-radius: 8px;
+    display: block; 
+    background: rgba(239, 239, 239, 0.7);
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    margin-left: 20px;
+    padding: 10px;
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+.hide + label:before {
+    background-color: #1e90ff;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px; 
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}
+.hide:checked + label + #six {
+    border-radius: 8px;
+    display: block; 
+    background: rgba(239, 239, 239, 0.7);
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    margin-left: 20px;
+    padding: 10px;
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
